@@ -4,6 +4,8 @@ plugins {
 
 android {
     namespace 'com.yourcompany.grocerypos'
+    compileSdk 33
+    namespace 'com.yourcompany.grocerypos'
     compileSdk 34
 
     defaultConfig {
