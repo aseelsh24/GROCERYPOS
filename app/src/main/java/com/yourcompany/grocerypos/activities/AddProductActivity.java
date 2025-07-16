@@ -40,7 +40,7 @@ public class AddProductActivity extends AppCompatActivity {
         String stockStr = editTextStock.getText().toString().trim();
 
         if (name.isEmpty() || priceStr.isEmpty() || stockStr.isEmpty()) {
-            Toast.makeText(this, "Please fill all required fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.fill_required_fields, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -50,8 +50,7 @@ public class AddProductActivity extends AppCompatActivity {
         product.sellingPrice = Double.parseDouble(priceStr);
         product.stockQuantity = Integer.parseInt(stockStr);
 
-        productViewModel.insert(product);
-        Toast.makeText(this, "Product saved", Toast.LENGTH_SHORT).show();
+        productViewModel.insert(product);            Toast.makeText(this, R.string.product_saved, Toast.LENGTH_SHORT).show();
         finish(); // Go back to the main activity
     }
 }

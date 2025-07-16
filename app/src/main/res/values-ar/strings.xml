@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نظام نقاط البيع</string>
+    <string name="add_product">إضافة منتج</string>
+    <string name="product_name">اسم المنتج</string>
+    <string name="barcode">الباركود (اختياري)</string>
+    <string name="selling_price">سعر البيع</string>
+    <string name="stock_quantity">الكمية المتوفرة</string>
+    <string name="save_product">حفظ المنتج</string>
+    <string name="fill_required_fields">الرجاء تعبئة الحقول المطلوبة</string>
+    <string name="product_saved">تم حفظ المنتج بنجاح</string>
+    <string name="price_stock_format">السعر: %.2f ريال - المخزون: %d</string>
+</resources>

@@ -28,7 +28,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         Product currentProduct = products.get(position);
         holder.textViewProductName.setText(currentProduct.name);
-        String details = String.format(Locale.getDefault(), "Price: $%.2f - Stock: %d",
+        String details = String.format(Locale.getDefault(), holder.itemView.getContext().getString(R.string.price_stock_format),
                 currentProduct.sellingPrice, currentProduct.stockQuantity);
         holder.textViewProductDetails.setText(details);
     }
